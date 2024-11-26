@@ -21,16 +21,14 @@ def test(grid, start, end):
         print()
     print('-'*70)
 
-if __name__ == '__main__':
-    
-    grid = [
-        [0, 1, 0, 0],
-        [0, 0, 0, 0],
-        [0, 0, 1, 0],
-        [0, 1, 0, 0]
-    ]
+grid = [
+    [0, 1, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 1, 0],
+    [0, 1, 0, 0]
+]
 
-    start = (2, 0)
-    end = (2, 3)
+start = (2, 0)
+end = (2, 3)
 
-    test(grid, start, end)
+test(grid, start, end)
