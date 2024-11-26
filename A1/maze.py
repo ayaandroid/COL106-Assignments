@@ -1,6 +1,5 @@
 class Maze:
 	def __init__(self, m: int, n : int) -> None:
-        ## DO NOT MODIFY THIS
         ## We initialise the list with all 0s, as initially all cells are vacant
 		self.grid_representation = []
 		for row in range(m):
