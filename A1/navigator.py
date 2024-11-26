@@ -3,9 +3,7 @@ from exception import *
 from stack import *
 
 class PacMan:
-	
-	navigator_maze = []
-	
+
 	def __init__(self, grid):
 		self.navigator_maze = grid.grid_representation
 		
@@ -18,15 +16,15 @@ class PacMan:
 		
 		visited = [[False]*n for i in range(m)]
 		
-		path = Stack(max_size = m*n)
+		path = Stack()
 		path.push(start)
 		
 		while not path.is_empty():
-			current = path.get_top()
+			current = path.top()
 			visited[current[0]][current[1]] = True
 			
 			if current == end:
-				return path.get_L()
+				return path.data
 				
 			if current[0]+1 < m and not visited[current[0]+1][current[1]] and self.navigator_maze[current[0]+1][current[1]] != 1:
 				path.push((current[0]+1, current[1]))
