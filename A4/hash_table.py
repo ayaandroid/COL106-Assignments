@@ -253,7 +253,3 @@ class HashMap(HashTable):
                     result.append(f'({x[0]}, {x[1]})')
 
         return ' | '.join(result)
-
-mp = HashMap("Linear", (2, 5))
-mp.insert(('Ayaan', [1,2]))
-print(mp)
