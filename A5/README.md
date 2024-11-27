@@ -7,5 +7,4 @@ Finds a path (i.e. a sequence of connecting flights) between 2 cities A and B su
      2. it uses the fewest number of flights among all paths satisfying 1, 2 and 3, and among all fewest flight paths it either
         1. arrives the earliest, or
         2. is the cheapest
-<br>
 Refer [problem statement](https://github.com/ayaandroid/COL106-assignments/blob/main/A5/COL106_A5.pdf) for more details.
